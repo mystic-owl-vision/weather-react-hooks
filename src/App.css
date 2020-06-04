@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html{    
+  background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+  background-size: cover;
+  height:100%;
+  background-attachment: fixed;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.link {
+    display: inline-table;
+    border: 1px solid #5f3159;
+    width: auto;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.link:active {
+	border: 1.5px solid #9e9595;
+	
+  }
+
+/* SEARCH */
+.city-search {
+	border-bottom: 1px solid;
+    padding-bottom: 30px;
+}
+
+/* FORM */ 
+form input {
+	float:left;
+	clear:both;
+}
+
+form input {
+	margin:15px 0;
+	padding:15px 10px;
+	width:100%;
+	outline:none;
+	border:1px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+    -webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+	display: flex;
+    justify-content: center;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 14em;
+	float: left;
+
+	position: absolute;
+  	margin-top:30px;
+	margin-bottom:30px;
+
+  	-moz-border-radius: 7px;
+  	-webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+button {
+	border: none;
+	background: #404040;
+	color: #ffffff !important;
+	padding: 12px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+}
+
+/* FORECAST CARD */
+.city-forecast-wrapper {
+	display: flex;
+	align-items: center;
+	height: 6rem;
+    border-bottom: 1px solid #9e9d9d;
+}
+
+.city-forecast-temp {
+	width: 45%;
+}
+
+.city-forecast-day {
+	width: 55%;
+}
+
+/* LOADING */
+.spinner {
+	width: 40px;
+	height: 40px;
+	margin: 100px auto;
+	background-color: #333;
+  
+	border-radius: 100%;  
+	-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+	animation: sk-scaleout 1.0s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-scaleout {
+	0% { -webkit-transform: scale(0) }
+	100% {
+	  -webkit-transform: scale(1.0);
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes sk-scaleout {
+	0% { 
+	  -webkit-transform: scale(0);
+	  transform: scale(0);
+	} 100% {
+	  -webkit-transform: scale(1.0);
+	  transform: scale(1.0);
+	  opacity: 0;
+	}
+  }
